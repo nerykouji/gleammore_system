@@ -7,7 +7,7 @@ const InvoiceShipStatusModalAdmin = ({ isOpen, onClose, selectedInvoice, handleR
         event.preventDefault();
         await shipStatusUpdate(selectedInvoice.shipping[0].id, shippingStatus);
         onClose();
-        handleRefresh();       
+        handleRefresh();
     };
 
     const selectOptionsStatus = () => {
@@ -31,6 +31,10 @@ const InvoiceShipStatusModalAdmin = ({ isOpen, onClose, selectedInvoice, handleR
                     <option value="returned">Returned</option>
                 </>)
             case 'cancel':
+                return (<>
+                    <option value="">Cannot be changed</option>
+                </>)
+            case 'returned':
                 return (<>
                     <option value="">Cannot be changed</option>
                 </>)

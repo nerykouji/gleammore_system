@@ -75,7 +75,7 @@ const CartComp = () => {
                         <div className="mt-8">
                             <div className="flex items-center justify-between pb-6">
                                 <p className="font-normal text-lg leading-8 text-black">{cart.length} Items</p>
-                                <p className="font-medium text-lg leading-8 text-black">${totalPrice.toFixed(2)}</p>
+                                <p className="font-medium text-lg leading-8 text-black">₱{totalPrice.toFixed(2)}</p>
                             </div>
                             <form onSubmit={handleSubmit}>
                                 <label className="flex  items-center mb-1.5 text-gray-600 text-sm font-medium">Shipping Fee
@@ -84,7 +84,7 @@ const CartComp = () => {
                                     <div className="relative w-full">
 
                                         <div className="block h-auto pr-10 pl-2 py-2.5 text-2xl font-medium shadow-xs text-gray-900 bg-white border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-gray-400">
-                                            ${parseFloat(fee || 0).toFixed(2)}
+                                            ₱{parseFloat(fee || 0).toFixed(2)}
                                         </div>
 
                                     </div>
@@ -106,10 +106,10 @@ const CartComp = () => {
                                 </div>
                                 <div className="flex items-center justify-between py-8">
                                     <p className="font-medium text-xl leading-8 text-black">{cart.length} Items</p>
-                                    <p className="font-semibold text-xl leading-8 text-indigo-600">${totalPrice.toFixed(2)}</p>
+                                    <p className="font-semibold text-xl leading-8 text-indigo-600">₱{totalPrice.toFixed(2)}</p>
                                 </div>
                                 <button
-                                    className={`w-full text-center ${cart.length ===0 || loadingCheckout ? "bg-slate-300" : "bg-indigo-600 hover:bg-indigo-700"}  rounded-xl py-3 px-6 font-semibold text-lg text-white transition-all duration-500`} disabled={cart.length ===0 || loadingCheckout}>{loadingCheckout ? "Checking out..." : "Checkout"}</button>
+                                    className={`w-full text-center ${cart.length === 0 || loadingCheckout ? "bg-slate-300" : "bg-indigo-600 hover:bg-indigo-700"}  rounded-xl py-3 px-6 font-semibold text-lg text-white transition-all duration-500`} disabled={cart.length === 0 || loadingCheckout}>{loadingCheckout ? "Checking out..." : "Checkout"}</button>
                             </form>
                         </div>
                     </div>
@@ -158,14 +158,14 @@ const CartItem = ({ item, handleRefresh }) => {
                         <h6 className="font-semibold text-base leading-7 text-black">{item.products.name}</h6>
                         <h6 className="font-normal text-base leading-7 text-gray-500">{item.products.category}</h6>
                         <h6 className="font-medium text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-indigo-600">
-                            ${item.products.price}
+                            ₱{item.products.price}
                         </h6>
                     </div>
                 </div>
                 <QuantityControl qty={qty} onIncrease={handleIncreaseQty} onDecrease={handleDecreaseQty} loadingQtyUpdate={loadingQtyUpdate} handleUpdateQty={handleUpdateQty} />
                 <div className="flex items-center max-[500px]:justify-center md:justify-end max-md:mt-3 h-full">
                     <p className="font-bold text-lg leading-8 text-gray-600 text-center transition-all duration-300 group-hover:text-indigo-600">
-                        ${totalPrice}
+                        ₱{totalPrice}
                     </p>
                 </div>
             </div>

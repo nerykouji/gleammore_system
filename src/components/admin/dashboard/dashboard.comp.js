@@ -26,12 +26,12 @@ const AdminDashboardComp = () => {
 
                     <div className="bg-white shadow-md rounded-lg p-4">
                         <h2 className="text-lg font-semibold">Monthly Income</h2>
-                        <p className="text-3xl font-bold">${monthlyIncome}</p>
+                        <p className="text-3xl font-bold">₱{monthlyIncome}</p>
                     </div>
 
                     <div className="bg-white shadow-md rounded-lg p-4">
                         <h2 className="text-lg font-semibold">Yearly Income</h2>
-                        <p className="text-3xl font-bold">${yearlyIncome}</p>
+                        <p className="text-3xl font-bold">₱{yearlyIncome}</p>
                     </div>
 
                     {/* <div class="bg-white shadow-md rounded-lg p-4">

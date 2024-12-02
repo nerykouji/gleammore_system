@@ -44,14 +44,14 @@ const DetailAdminInvoice = ({ selectedInvoice, setViewDetail }) => {
                     <p><strong>Shipped Date:</strong> {selectedInvoice.shipping[0].date_shipped && dateFormatter(selectedInvoice.shipping[0].date_shipped) || "not set"}</p>
                     <p><strong>Delivered Date:</strong> {selectedInvoice.shipping[0].date_delivered && dateFormatter(selectedInvoice.shipping[0].date_delivered) || 'not set'}</p>
                     <p><strong>Status:</strong> {statusColor(selectedInvoice.shipping[0].status)}</p>
-                    <p><strong>Shipping Fee:</strong> ${selectedInvoice.shipping[0].shipping_fee.toFixed(2)}</p>
+                    <p><strong>Shipping Fee:</strong> ₱{selectedInvoice.shipping[0].shipping_fee.toFixed(2)}</p>
                 </div>
 
                 <hr className="my-4" />
 
                 <h2 className="text-lg font-semibold mb-4">Payment Details</h2>
                 <div className="space-y-2">
-                    <p><strong>Payable:</strong> ${selectedInvoice.payment[0].payable.toFixed(2)}</p>
+                    <p><strong>Payable:</strong> ₱{selectedInvoice.payment[0].payable.toFixed(2)}</p>
                     <p><strong>Mode:</strong> {selectedInvoice.payment[0].mode}</p>
                 </div>
 
@@ -63,8 +63,8 @@ const DetailAdminInvoice = ({ selectedInvoice, setViewDetail }) => {
                         <li key={item.id} className="border p-3 rounded-md shadow-sm bg-gray-100">
                             <p><strong>Product:</strong> {item.products.name}</p>
                             <p><strong>Quantity:</strong> {item.quantity}</p>
-                            <p><strong>Price:</strong> ${item.products.price.toFixed(2)}</p>
-                            <p><strong>Total Price:</strong> ${item.total_price.toFixed(2)}</p>
+                            <p><strong>Price:</strong> ₱{item.products.price.toFixed(2)}</p>
+                            <p><strong>Total Price:</strong> ₱{item.total_price.toFixed(2)}</p>
                         </li>
                     ))}
                 </ul>
