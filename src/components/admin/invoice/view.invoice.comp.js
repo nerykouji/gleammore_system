@@ -65,7 +65,7 @@ const ViewAdminInvoiceComp = ({ invoice, setSelectedInvoice, setViewDetail, open
                                         setShippingStatus(item.shipping[0].status);
                                         openModal();
                                     }}>
-                                        {statusColor(item.shipping[0].status)}
+                                        {statusColor(item.length > 0 && item.shipping[0].status)}
                                     </td>
                                     <td className="px-6 py-4">
                                         {dateFormatter(item.date)}
