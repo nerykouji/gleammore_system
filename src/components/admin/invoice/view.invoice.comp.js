@@ -61,11 +61,13 @@ const ViewAdminInvoiceComp = ({ invoice, setSelectedInvoice, setViewDetail, open
                                         {item.users.address}
                                     </td>
                                     <td className="px-6 py-4 cursor-pointer hover:bg-slate-200" onClick={() => {
-                                        setSelectedInvoice(item);
-                                        setShippingStatus(item.shipping[0].status);
-                                        openModal();
+                                        if (item.shipping.length > 0) {
+                                            setSelectedInvoice(item);
+                                            setShippingStatus(item.shipping[0].status);
+                                            openModal();
+                                        }
                                     }}>
-                                        {statusColor(item.length > 0 && item.shipping[0].status)}
+                                        {statusColor((item.shipping.length > 0 && item.shipping[0].status) || "not set")}
                                     </td>
                                     <td className="px-6 py-4">
                                         {dateFormatter(item.date)}
