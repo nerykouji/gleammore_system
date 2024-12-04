@@ -25,8 +25,8 @@ export default function Home() {
             </div>
 
             <div className="max-w-lg lg:mx-12 lg:order-2">
-              <h1 className="text-3xl font-semibold tracking-wide text-gray-800 ">WQEQEQW</h1>
-              <p className="mt-4 text-gray-600 ">Are you ready to elevate your computing experience without breaking the bank? Look no further! Our curated selection of the most affordable PC parts you`ve ever seen is here to help you build or upgrade your dream machine without stretching your budget.</p>
+              <h1 className="text-3xl font-semibold tracking-wide text-gray-800 ">Gleammore: Where Fashion Meets Artistry</h1>
+              <p className="mt-4 text-gray-600 ">Gleammore is your ultimate destination for trendsetting fashion crafted from exquisite beaded accessories. We specialize in creating timeless pieces that blend vibrant artistry with contemporary style, offering everything from chic jewelry and statement handbags to elegant phone charms and customized wearables.</p>
               <div className="mt-6">
                 <Link href="/shop" className="px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-yellow-600 rounded-lg hover:bg-yellow-500 lg:mx-0 lg:w-auto focus:outline-none">Shop now</Link>
               </div>
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-            <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://img.freepik.com/free-vector/colorful-workspace-with-isometric-perspective_23-2147679428.jpg?semt=ais_hybrid" alt="apple watch photo" />
+            <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/468464265_970495065104404_6006090984930513705_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KYeFR-8KT_4Q7kNvgGUDBfP&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=AxozLTXa_nvXvBKKFzRCWhg&oh=00_AYBHbAAeak9vQlRmSbPeqqfLWUT6ONlmVGGq-8URZYOWdA&oe=6755AB36" alt="background" />
           </div>
         </div>
 
