@@ -25,7 +25,7 @@ export default function Home() {
             </div>
 
             <div className="max-w-lg lg:mx-12 lg:order-2">
-              <h1 className="text-3xl font-semibold tracking-wide text-gray-800 ">Discover Unbeatable Deals on PC Parts!</h1>
+              <h1 className="text-3xl font-semibold tracking-wide text-gray-800 ">WQEQEQW</h1>
               <p className="mt-4 text-gray-600 ">Are you ready to elevate your computing experience without breaking the bank? Look no further! Our curated selection of the most affordable PC parts you`ve ever seen is here to help you build or upgrade your dream machine without stretching your budget.</p>
               <div className="mt-6">
                 <Link href="/shop" className="px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-yellow-600 rounded-lg hover:bg-yellow-500 lg:mx-0 lg:w-auto focus:outline-none">Shop now</Link>
